@@ -33,8 +33,7 @@ function operPressed(ev) {
     if(lastSymbol === '+' || lastSymbol === '-' || lastSymbol === '*' || lastSymbol === '/') {
         if(lastSymbol === ev.target.innerText) {
             display.value = display.value;
-        }
-        else {
+        } else {
             display.value = display.value.substring(0, display.value.length - 1) + oper;
         }
     } else {
