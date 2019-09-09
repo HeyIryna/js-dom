@@ -8,7 +8,7 @@ const del = document.querySelector('.calc .del');
 const memoAdd = document.querySelector('.calc .memoAdd');
 const memoExtr = document.querySelector('.calc .memoExtr');
 
-//displayes pressed digits
+//displays pressed digits
 //enables entering zeros in front of a number
 nums.forEach( buttonNum => buttonNum.addEventListener('click', numPressed) );
 function numPressed(ev) {
@@ -43,7 +43,7 @@ function operPressed(ev) {
 }
 
 //executes calculation
-//enebles dividing by 0
+//enables dividing by 0
 equal.addEventListener('click', eqPressed);
 function eqPressed() {
     if(display.value.endsWith('/0')) {
